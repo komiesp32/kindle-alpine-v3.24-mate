@@ -8,3 +8,12 @@ If you wanna lock your kindle, please don't lock it before you set these (if you
 `gsettings set org.mate.screensaver embedded-keyboard-command 'onboard -e'`
 
 Everything seems to works at it should, except some graphics bug in lock screen 
+
+
+!!WARNING!!
+
+WHILE ALPINE IS RUNNING / THE IMAGE IS MOUNTED, DO NOT CONNECT YOUR KINDLE TO THE COMPUTER WITHOUT USBNETWORK ENABLED! The image resides in /mnt/us, and that is your usb mass storage location. When Alpine and the computer write on the userstore partition (partition 4) at the same time, it will be destroyed, and you need to fix that partition to get your Kindle working again. It might even be possible to brick the Kindle!!! Kual has an option to show the USBNetwork status, so check that beforehand if you plan on doing SSH while Alpine runs.
+
+## Installation
+- Put all the file in release to the /mnt/us, and open kterm, `cd /mnt/us` `sh alpine.sh` then `sh startgui.sh` if you need GUI (`startgui2.sh` is for testing on my pc though, for kindles its the startgui)
+- idk why launching in the kual didnt work but manual booting still works
