@@ -7,8 +7,8 @@ If you wanna lock your kindle, please don't lock it before you set these (if you
 
 `gsettings set org.mate.screensaver embedded-keyboard-command 'onboard -e'`
 
-Everything seems to works at it should, except some graphics bug in lock screen 
-
+Everything seems to works at it should, except some graphics bug in lock screen (more bugs, keep reading)
+Expect 2-3 minutes delaying when clicking stuff in chromium while you are in a website lmao, remember to enable swap to use chromium
 
 ### !!WARNING!!
 
