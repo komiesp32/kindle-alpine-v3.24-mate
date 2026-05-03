@@ -16,6 +16,13 @@ WHILE ALPINE IS RUNNING / THE IMAGE IS MOUNTED, DO NOT CONNECT YOUR KINDLE TO TH
 
 ## Installation and launching 
 - Put all the file in release to the /mnt/us, and open kterm, `cd /mnt/us` `sh alpine.sh` then `sh startgui.sh` if you need GUI (`startgui2.sh` is for testing on my pc though, for kindles its the startgui)
-- idk why launching in the kual didnt work but manual booting still works
+- ~~idk why launching in the kual didnt work but manual booting still works~~ use ``cp /mnt/us/alpine.conf /etc/upstart`` to use it from the launcher (i will make a script for it soon)
 
 Notes: I forgot to fork it from schuhumi's repo but thanks for his `create_kindle_alpine_image.sh`
+
+# Bugs
+- When closing chromium, expect it to crash the UI and says killed in the term, so if you plan to use chromium then use drop to alpine
+- Cant interact with Apperance background change
+
+## Todo
+- I will release a new version with fixed icons for you guys, maybe around march 15 if im free
