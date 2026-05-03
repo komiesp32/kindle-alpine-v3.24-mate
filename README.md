@@ -1,4 +1,4 @@
-# kindle-alpine-v3.24-mate
+# Alpine on kindle (better)
 Better Alpine for basically any kindle with more than 2GB of storage space
 
 If you wanna lock your kindle, please don't lock it before you set these (if you dont wanna reboot your kindle)
