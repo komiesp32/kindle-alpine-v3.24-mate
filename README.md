@@ -17,3 +17,5 @@ WHILE ALPINE IS RUNNING / THE IMAGE IS MOUNTED, DO NOT CONNECT YOUR KINDLE TO TH
 ## Installation and launching 
 - Put all the file in release to the /mnt/us, and open kterm, `cd /mnt/us` `sh alpine.sh` then `sh startgui.sh` if you need GUI (`startgui2.sh` is for testing on my pc though, for kindles its the startgui)
 - idk why launching in the kual didnt work but manual booting still works
+
+Notes: I forgot to fork it from schuhumi's repo but thanks for his `create_kindle_alpine_image.sh`
